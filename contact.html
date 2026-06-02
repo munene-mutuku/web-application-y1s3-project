@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — KeshoSave</title>
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header>
+    <nav>
+      <strong>KeshoSave</strong>
+      &nbsp;|&nbsp;
+      <a href="index.html">Home</a> &nbsp;|&nbsp;
+      <a href="how-it-works.html">How It Works</a> &nbsp;|&nbsp;
+      <a href="signup.html">Sign Up</a> &nbsp;|&nbsp;
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <hr />
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main>
+
+    <!-- PAGE INTRO -->
+    <section id="intro">
+      <h1>Contact Us</h1>
+      <p>
+        Have a question, suggestion, or need help with your account?
+        Our support team is here to help. Reach out using any of the
+        channels below or send us a message using the form on this page.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- CONTACT INFORMATION -->
+    <section id="contact-info">
+      <h2>Our Contact Details</h2>
+
+      <article>
+        <h3>Address</h3>
+        <p>
+          <strong>KeshoSave Limited</strong>
+          <br />
+          Nairobi, Kenya
+        </p>
+      </article>
+
+      <article>
+        <h3>Phone &amp; Email</h3>
+        <p>
+          <strong>Phone:</strong>
+          <a href="tel:+254700000000">+254 700 000 000</a>
+          <br />
+          <strong>Email:</strong>
+          <a href="mailto:hello@keshosave.co.ke">hello@keshosave.co.ke</a>
+        </p>
+      </article>
+
+      <hr />
+
+      <!-- OPENING HOURS TABLE -->
+      <h2>Opening Hours</h2>
+      <p>
+        Our support team is available during the following hours.
+        Outside these hours, send us an email and we will respond
+        by the next business day.
+      </p>
+
+      <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Opening Time</th>
+            <th>Closing Time</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>8:00 AM</td>
+            <td>6:00 PM</td>
+            <td><em>Open</em></td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>8:00 AM</td>
+            <td>6:00 PM</td>
+            <td><em>Open</em></td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>8:00 AM</td>
+            <td>6:00 PM</td>
+            <td><em>Open</em></td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>8:00 AM</td>
+            <td>6:00 PM</td>
+            <td><em>Open</em></td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>8:00 AM</td>
+            <td>6:00 PM</td>
+            <td><em>Open</em></td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>9:00 AM</td>
+            <td>2:00 PM</td>
+            <td><em>Open</em></td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>—</td>
+            <td>—</td>
+            <td><strong>Closed</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr />
+
+    <!-- CONTACT FORM -->
+    <section id="contact-form-section">
+      <h2>Send Us a Message</h2>
+      <p>
+        Fill in the form below and we will get back to you within
+        <strong>1 business day</strong>.
+      </p>
+
+      <form action="#" method="post">
+
+        <!-- Name -->
+        <p>
+          <label for="contact_name"><strong>Your Name</strong></label>
+          <br />
+          <input
+            type="text"
+            id="contact_name"
+            name="contact_name"
+            placeholder="e.g. Brian Otieno"
+            required
+            size="40"
+          />
+        </p>
+
+        <!-- Email -->
+        <p>
+          <label for="contact_email"><strong>Email Address</strong></label>
+          <br />
+          <input
+            type="email"
+            id="contact_email"
+            name="contact_email"
+            placeholder="e.g. brian@gmail.com"
+            required
+            size="40"
+          />
+        </p>
+
+        <!-- Phone -->
+        <p>
+          <label for="contact_phone"><strong>Phone Number</strong> <em>(optional)</em></label>
+          <br />
+          <input
+            type="tel"
+            id="contact_phone"
+            name="contact_phone"
+            placeholder="e.g. +254 712 345 678"
+            size="40"
+          />
+        </p>
+
+        <!-- Subject / Topic -->
+        <p>
+          <label for="topic"><strong>Topic</strong></label>
+          <br />
+          <select id="topic" name="topic" required>
+            <option value="">-- Select a topic --</option>
+            <option value="account">Account &amp; Login</option>
+            <option value="mpesa">M-Pesa Integration</option>
+            <option value="billing">Billing &amp; Payments</option>
+            <option value="bug">Report a Bug</option>
+            <option value="feedback">General Feedback</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+
+        <!-- Message -->
+        <p>
+          <label for="message"><strong>Your Message</strong></label>
+          <br />
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            cols="50"
+            placeholder="Describe your question or issue in detail..."
+            required
+          ></textarea>
+        </p>
+
+        <!-- Newsletter opt-in -->
+        <p>
+          <input type="checkbox" id="newsletter" name="newsletter" value="yes" />
+          <label for="newsletter">
+            Subscribe me to the KeshoSave newsletter for saving tips and product updates.
+          </label>
+        </p>
+
+        <!-- Submit -->
+        <p>
+          <button type="submit">Send Message</button>
+        </p>
+
+      </form>
+    </section>
+
+    <hr />
+
+    <!-- GOOGLE MAPS EMBED -->
+    <section id="map">
+      <h2>Find Us in Nairobi, Kenya</h2>
+      <p>
+        We are located in Nairobi, Kenya. Ample parking is available on site.
+      </p>
+
+      <iframe
+        src="https://maps.google.com/maps?q=Nairobi,Kenya&output=embed"
+        width="600"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        title="KeshoSave office location in Nairobi, Kenya"
+      ></iframe>
+    </section>
+
+    <hr />
+
+    <!-- ASIDE — Social / extra support channels -->
+    <aside id="other-channels">
+      <h3>Other Ways to Reach Us</h3>
+      <ul>
+        <li><strong>WhatsApp:</strong> +254 700 000 000 (chat only, no calls)</li>
+        <li><strong>Twitter / X:</strong> @KeshoSaveKE</li>
+        <li><strong>Instagram:</strong> @keshosave</li>
+        <li><strong>Facebook:</strong> KeshoSave Kenya</li>
+      </ul>
+      <p>
+        <em>Response times on social media may be longer than email.
+        For urgent account issues, email us directly.</em>
+      </p>
+    </aside>
+
+  </main>
+
+  <hr />
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <p>
+      &copy; 2026 <strong>KeshoSave</strong> &mdash; Nairobi, Kenya
+      <br />
+      <a href="mailto:hello@keshosave.co.ke">hello@keshosave.co.ke</a>
+      &nbsp;|&nbsp;
+      +254 700 000 000
+    </p>
+    <nav>
+      <a href="index.html">Home</a> &nbsp;|&nbsp;
+      <a href="how-it-works.html">How It Works</a> &nbsp;|&nbsp;
+      <a href="signup.html">Sign Up</a> &nbsp;|&nbsp;
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <p><em>Save smarter, live better.</em></p>
+  </footer>
+
+</body>
+</html>

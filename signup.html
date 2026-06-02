@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up — KeshoSave</title>
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header>
+    <nav>
+      <strong>KeshoSave</strong>
+      &nbsp;|&nbsp;
+      <a href="index.html">Home</a> &nbsp;|&nbsp;
+      <a href="how-it-works.html">How It Works</a> &nbsp;|&nbsp;
+      <a href="signup.html">Sign Up</a> &nbsp;|&nbsp;
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <hr />
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main>
+
+    <!-- PAGE INTRO -->
+    <section id="intro">
+      <h1>Create Your Free KeshoSave Account</h1>
+      <p>
+        Join thousands of Kenyans taking control of their money.
+        <strong>No credit card required.</strong>
+        Sign up in under 2 minutes.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- REGISTRATION FORM + FAQ side by side using a table layout -->
+    <section id="signup-section">
+
+      <!-- REGISTRATION FORM -->
+      <article id="signup-form-container">
+        <h2>Your Details</h2>
+
+        <form action="#" method="post">
+
+          <!-- Full Name -->
+          <p>
+            <label for="fullname"><strong>Full Name</strong></label>
+            <br />
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="e.g. Amina Wanjiku"
+              required
+              size="40"
+            />
+          </p>
+
+          <!-- Email Address -->
+          <p>
+            <label for="email"><strong>Email Address</strong></label>
+            <br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="e.g. amina@gmail.com"
+              required
+              size="40"
+            />
+          </p>
+
+          <!-- Phone Number -->
+          <p>
+            <label for="phone"><strong>Phone Number (Safaricom/M-Pesa)</strong></label>
+            <br />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="e.g. +254 712 345 678"
+              required
+              size="40"
+            />
+          </p>
+
+          <!-- Password -->
+          <p>
+            <label for="password"><strong>Password</strong></label>
+            <br />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="At least 8 characters"
+              required
+              size="40"
+            />
+          </p>
+
+          <hr />
+
+          <!-- Account Type — Radio Buttons -->
+          <p><strong>Account Type</strong></p>
+          <p>
+            <input
+              type="radio"
+              id="personal"
+              name="account_type"
+              value="personal"
+              checked
+            />
+            <label for="personal">Personal — for individuals and students</label>
+            <br />
+            <input
+              type="radio"
+              id="business"
+              name="account_type"
+              value="business"
+            />
+            <label for="business">Business — for freelancers and SMEs</label>
+          </p>
+
+          <hr />
+
+          <!-- Monthly Income Range — Select Dropdown -->
+          <p>
+            <label for="income"><strong>Monthly Income Range</strong></label>
+            <br />
+            <select id="income" name="income" required>
+              <option value="">-- Select your range --</option>
+              <option value="below_20k">Below KES 20,000</option>
+              <option value="20k_50k">KES 20,000 – 50,000</option>
+              <option value="above_50k">Above KES 50,000</option>
+            </select>
+          </p>
+
+          <hr />
+
+          <!-- Savings Goals — Checkboxes -->
+          <p><strong>What do you want to use KeshoSave for?</strong> (select all that apply)</p>
+          <p>
+            <input type="checkbox" id="goal_save" name="goals" value="save_money" />
+            <label for="goal_save">Save money toward a goal</label>
+            <br />
+            <input type="checkbox" id="goal_track" name="goals" value="track_spending" />
+            <label for="goal_track">Track my daily spending</label>
+            <br />
+            <input type="checkbox" id="goal_debt" name="goals" value="pay_debt" />
+            <label for="goal_debt">Pay off debt (Fuliza, loans, etc.)</label>
+          </p>
+
+          <hr />
+
+          <!-- Main Financial Goal — Textarea -->
+          <p>
+            <label for="main_goal">
+              <strong>Describe your main financial goal</strong>
+              <em>(optional)</em>
+            </label>
+            <br />
+            <textarea
+              id="main_goal"
+              name="main_goal"
+              rows="4"
+              cols="50"
+              placeholder="e.g. I want to save KES 30,000 for school fees by August 2026."
+            ></textarea>
+          </p>
+
+          <hr />
+
+          <!-- Terms -->
+          <p>
+            <input type="checkbox" id="terms" name="terms" required />
+            <label for="terms">
+              I agree to the
+              <a href="#">Terms of Service</a>
+              and
+              <a href="#">Privacy Policy</a>.
+            </label>
+          </p>
+
+          <!-- Submit Button -->
+          <p>
+            <button type="submit">Create my account</button>
+          </p>
+
+          <p>
+            Already have an account?
+            <a href="#">Log in here</a>
+          </p>
+
+        </form>
+      </article>
+
+      <hr />
+
+      <!-- FAQ SECTION — Aside -->
+      <aside id="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <h3>Is KeshoSave really free?</h3>
+        <p>
+          Yes. All core features — budgeting, savings goals, expense tracking,
+          and M-Pesa integration — are completely free.
+          <strong>No credit card is required.</strong>
+        </p>
+
+        <h3>How do I link M-Pesa?</h3>
+        <p>
+          After signing up, go to <em>Settings &rarr; Linked Accounts</em>
+          and enter your Safaricom number. You will receive a confirmation
+          prompt on your phone to complete the link.
+        </p>
+
+        <h3>Is my data safe?</h3>
+        <p>
+          Yes. KeshoSave uses <strong>bank-level encryption</strong> to protect
+          your data. We never sell your personal information to third parties.
+        </p>
+
+        <h3>Can I use KeshoSave for my business?</h3>
+        <p>
+          Absolutely. Select <strong>Business</strong> as your account type when
+          signing up to access features designed for freelancers and small businesses.
+        </p>
+
+        <hr />
+
+        <p>
+          Have another question?
+          <a href="contact.html">Contact our support team &rarr;</a>
+        </p>
+      </aside>
+
+    </section>
+
+  </main>
+
+  <hr />
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <p>
+      &copy; 2026 <strong>KeshoSave</strong> &mdash; Nairobi, Kenya
+      <br />
+      <a href="mailto:hello@keshosave.co.ke">hello@keshosave.co.ke</a>
+      &nbsp;|&nbsp;
+      +254 700 000 000
+    </p>
+    <nav>
+      <a href="index.html">Home</a> &nbsp;|&nbsp;
+      <a href="how-it-works.html">How It Works</a> &nbsp;|&nbsp;
+      <a href="signup.html">Sign Up</a> &nbsp;|&nbsp;
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <p><em>Save smarter, live better.</em></p>
+  </footer>
+
+</body>
+</html>
